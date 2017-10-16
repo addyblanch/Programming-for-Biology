@@ -1,0 +1,54 @@
+    1  cd Desktop/files/
+    2  ls
+    3  cd ~
+    4  pwd
+    5  ls
+    6  ls wc
+    7  ls|wc
+    8  mkdir problemsets
+    9  ls
+   10  cd problemsets/
+   11  git clone 'www.github.com/srobb1/pfb2017/blob/master/files/sequecnes'
+   12  git clone "www.github.com/srobb1/pfb2017/blob/master/files/sequecnes"
+   13  git clone "www.github.com/srobb1/pfb2017/blob/master/files/sequences"
+   14  git clone "www.github.com/srobb1/pfb2017/blob/master/files/sequences.nt.fa"
+   15  git clone "www.github.com/srobb1/pfb2017/blob/master/files/"
+   16  gitclone "www.github.com/srobb1/pfb2017/blob/master/files/"
+   17  cp ~/Desktop/files/sequences.nt.fa 
+   18  cp ~/Desktop/files/sequences.nt.fa ~/problemsets/
+   19  ls
+   20  wc -l sequences.nt.fa 
+   21  wc -c sequences.nt.fa 
+   22  man head
+   23  head -c 1 sequences.nt.fa 
+   24  man head
+   25  head -n 1 sequences.nt.fa 
+   26  tail -c 3 sequences.nt.fa 
+   27  ma tail
+   28  man tail
+   29  tail -n 3 sequences.nt.fa 
+   30  grep -c NM*
+   31  man grep
+   32  grep -c NM* sequences.nt.fa 
+   33  mv sequences.nt.fa cancer_genes.fasta
+   34  ls
+   35  curl -O http://programmingforbiology.org/problem_sets/files/cuffdiff.txt 
+   36  ls
+   37  head cuffdiff.txt 
+   38  man sort
+   39  sort -k 10 cuffdiff.txt 
+   40  sort -k 10 cuffdiff.txt > sorted.cuffdiff.out
+   41  ls
+   42  head -n 100 sorted.cuffdiff.out 
+   43  head -n 100 sorted.cuffdiff.out > top100.sorted.cuffdiff.out
+   44  ls
+   45  wc -l top100.sorted.cuffdiff.out 
+   46  sort -k 1 | cut -f1 > head -n 100 > differentially.expressed.genes.txt
+   47  sort -k 1 | cut -f 1 > head -n 100 > differentially.expressed.genes.txt
+   48  sort -k 1 | cut -f 1 | head -n 100 > differentially.expressed.genes.txt
+   49  sort -k 1 cuffdiff.txt | cut -f 1 | head -n 100 > differentially.expressed.genes.txt
+   50  ls
+   51  head differentially.expressed.genes.txt 
+   52  less differentially.expressed.genes.txt 
+   53  cd ~
+   54  history > ~/Desktop/problemset1.txt
