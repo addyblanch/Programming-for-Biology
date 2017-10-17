@@ -1,0 +1,72 @@
+    1  cd Desktop/files/
+    8  mkdir problemsets
+   10  cd problemsets/
+   18  cp ~/Desktop/files/sequences.nt.fa ~/problemsets/
+   20  wc -l sequences.nt.fa 
+   21  wc -c sequences.nt.fa 
+   22  man head
+   23  head -c 1 sequences.nt.fa 
+   24  man head
+   25  head -n 1 sequences.nt.fa 
+   26  tail -c 3 sequences.nt.fa 
+   28  man tail
+   29  tail -n 3 sequences.nt.fa 
+   33  mv sequences.nt.fa cancer_genes.fasta
+   34  ls
+   35  curl -O http://programmingforbiology.org/problem_sets/files/cuffdiff.txt 
+   36  ls
+   37  head cuffdiff.txt 
+   38  man sort
+   40  sort -k 10 cuffdiff.txt > sorted.cuffdiff.out
+   41  ls
+   43  head -n 100 sorted.cuffdiff.out > top100.sorted.cuffdiff.out
+   44  ls
+   45  wc -l top100.sorted.cuffdiff.out 
+   49  sort -k 1 cuffdiff.txt | cut -f 1 | head -n 100 > differentially.expressed.genes.txt
+   50  ls
+   52  less differentially.expressed.genes.txt 
+   57  ls
+   62  echo "# pfb2017" >> README.md
+   63  git init
+   64  git add README.md
+   65  git commit -m "first commit"
+   66  git remote add origin https://github.com/addyblanch/pfb2017.git
+   67  git remote add origin https://github.com/addyblanch/pfb2017.git
+   68  git push -u origin master
+   69  ls
+   70  git add *
+   71  git commit -m 'adding previous problem set files'
+   72  git push
+   73  ls
+   74  mkdir files
+   75  mv cancer_genes.fasta files/
+   76  git add *
+   77  git commit -m 'tidy up'
+   78  git push
+   79  nano
+   80  ls
+   81  cd files/
+   82  ls
+   83  cd ../
+   84  ls
+   85  mv mysequences.txt files/
+   86  git add files/mysequences.txt 
+   87  git commit -m "'add mysequences'
+   88  git commit -m 'add mysequences'
+   89  git push 
+   90  mkdir fasta
+   91  mc fasta fastas
+   92  mv fasta fastas
+   93  ls
+   94  cp files/cancer_genes.fasta fastas/
+   95  cd fastas/
+   96  ls
+   97  cd ../files/
+   98  ls
+   99  rm cancer_genes.fasta 
+  100  ls
+  101  cd ../
+  102  git add *
+  103  git commit -m 'tidy up2'
+  104  git push
+  105  history > unixBasics.history.txt
